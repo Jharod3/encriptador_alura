@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto </title>
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header>
+        <img class="imagem_logo" src="./img/logo.png" alt="Logo Alura">
+    </header>
+    
+    <main>
+    
+        <section>
+            <div class="text__principal">
+                <textarea name="textoDigitado" id="textoDigitado"  class="start__text" maxlength="1000" placeholder="Digite el texto aquí"></textarea>
+            </div>            
+       
+            <div class="alert__text">
+                <img src="./img/Group.svg">
+                <a>Solo letras minúsculas y sin caracteres especiales.</a>
+            </div>
+           
+            <div class="buttons">
+                <button class="buttons__Encrypt" type="button" onclick="Encrypt()">Encriptar</button>
+                <button class="buttons__Decrypt" type="button" onclick="Decrypt()">Desencriptar</button>
+            </div>
+        </section>
+
+        <aside class="result">
+            
+            <div class="result__mensage">
+                <img  class="result__image" src="img/muñeco.svg">
+                <h3 class="result__mensage__first">Ningún mensaje fue encontrado</h3>
+                <p class="result__mensage__second">Ingresa el texto que deseas encriptar o desencriptar.</p>
+            </div>
+
+            <div class="result__final">
+                <textarea class="result__challenge"></textarea>
+                <button class="result__copy">Copiar</button>
+            </div>
+        </aside>
+    </main>
+
+   
+    <footer class="start__footer">
+            <section class="section__footer">
+                <li>
+                    <a class="footer__github" href="https://github.com/Jharod3">
+                    <img src="img/github-mark.svg" width="20"> Github
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__linkedin" href="https://www.linkedin.com/in/jharod-hidalgo-534432241/">
+                        <img src="img/icons8-linkedin.svg" width="20"> LinkedIn</a>
+                </li>
+            </section>
+
+        <p>Hecho por: Jharod Hidalgo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+<script src="index.js"> </script>
+</html>

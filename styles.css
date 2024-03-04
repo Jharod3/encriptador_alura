@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background: #E5E5E5;
+}
+
+header {
+    padding: 1.5%;
+    margin-left: 0.2%;
+}
+
+.imagem_logo {
+    position: relative;
+    width: 120px;
+    height: 48px;
+}
+
+main {
+    display: flex;
+    padding: 2% 0 2% 0;
+    margin-left: 250px;
+    gap: 8px;
+}   
+
+.start__text {
+    border: 0 transparent;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    width: 680px;
+    height: 400px;
+}
+
+.start__text:focus,
+.start__text:active{
+    border: none;
+    outline: none;
+}
+
+::placeholder { color: #0A3871; }
+    .textoarea:focus {
+        outline: none;
+    }
+
+.alert__text {
+    display: flex;
+    text-align: center;
+    margin-top: 9px;
+    color: #495057;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    gap: 8px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 17px;
+    gap: 24px;
+}
+
+.buttons__Encrypt {
+    color: #FFFFFF;
+    background: #0A3871;
+    border-color: #0A3871;
+    border-radius: 24px;
+    width: 40%;
+    height: 67px;
+    padding: 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    align-items: center;
+}
+
+.buttons__Decrypt {
+    color: #0A3871;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    width: 40%;
+    height: 67px;
+    padding: 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    align-items: center;
+}
+
+
+.buttons__Encrypt:hover,
+.buttons__Decrypt:hover{
+    margin: 0.3%;
+    width: 39.5%;
+    padding: 1.8%;
+}
+
+
+.result {
+    display: flex;
+    width: 350px;
+    height: 500px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+    background: #FFFFFF;
+}
+
+.result__mensage {
+    background: none;
+    width: 336px;
+    height: 122px;
+    top: 19px;
+    left: 1032px;
+    gap: 16px;
+    text-align: center;
+}
+
+.result__image {
+    background: none;
+    width: 336px;
+    height: 304px;
+    top: 283px;
+    left: 1032px;
+}
+
+.result__mensage__first {
+    background: none;
+    width: 336px;
+    height: 58px;
+    font-family: 'Inter', sans-serif;
+    color: #343A40;
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.result__mensage__second {
+    background: none;
+    width: 336px;
+    height: 48px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    width: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.result__final {
+    display: none;
+    width: 400px;
+    height: 500px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+    background: #FFFFFF;
+    resize: none; 
+ 
+}
+
+.result__challenge {
+    background: #FFFFFF;
+    border: 0 transparent;
+    resize: none;
+    border-radius: px;
+    width: 93%;
+    height: 80%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #495057;
+    gap: 20px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.result__copy {
+    background: #FFFFFF;
+    width: 60%;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    padding: 24px;
+    gap: 8px;
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    width: 400;
+    line-height: 19.6px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+}
+.result__copy:hover{
+   
+    width: 58.5%;
+    padding: 6.5%;
+
+}
+
+/* FOOTER */
+
+.start__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    color: #343A40;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    list-style: none;
+    
+}
+
+.footer__github,.footer__linkedin  {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsive site */
+
+@media screen and (max-width: 1174px) {
+
+    
+    header {
+        display: block;
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        margin-left: 1.3rem; /* Adding left margin*/
+    }
+
+    .start__text {
+        display: block;
+        padding: 1.4rem;
+        width: 78%;
+    }
+
+    .result {
+        width: 75%;
+        height: 100%;
+        border-radius: 20px;
+        padding: 2rem;
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centers vertically */
+        align-items: center; /* Centers horizontally */
+        font-size: large;
+    }
+    
+    .result__final {
+        display: none;
+        width: 75%;
+        max-width: 400px; 
+        height: 500px;
+        border-radius: 20px; 
+        background: #FFFFFF;
+        resize: none;
+        margin: auto;
+        gap: 2rem; 
+    }
+    
+    .result__challenge {
+        background: #FFFFFF;
+        border: 0 transparent;
+        resize: none;
+        border-radius: 20px; 
+        width: 100%; /* Fill width in parent container (.result) */
+        height: 82%;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #495057;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .result__copy {
+        background: #FFFFFF;
+        border-radius: 20px; 
+        border: 1px solid #0A3871;
+        padding: 2rem;
+        gap: 8px;
+        color: #0A3871;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 19.6px;
+        width: 100%; /* Fill width in parent container (.result) */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .result__image {
+        display: none;
+    }
+  
+}
+
+@media screen and (max-width: 395px) {
+
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    }
+}
